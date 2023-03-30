@@ -32,11 +32,16 @@ body,html {
     100% {transform: rotate(360deg);}
 }
 #header {
-    width:80%;
-    padding:4% 10%;
-    text-align:center;
-    position:absolute;
-    transition:0.6s ease-in-out;
+    width: 80%;
+    padding: 4% 10%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    transition: 0.6s ease-in-out;
 }
 #header div {
     display:block;
@@ -55,9 +60,10 @@ body,html {
     font-family: 'Comfortaa', cursive;
 }
 #links {
-    margin:40px 0px;
-    transition:0.6s ease-in-out;
-    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 #links a {
     margin:0px 30px;
@@ -68,7 +74,8 @@ body,html {
     border-bottom:2px solid transparent;
 }
 #links a:hover {
-    border-bottom:2px solid #fff;
+    color: #FF416C;
+    border-bottom: 2px solid #FF416C;
 }
 #middle {
     width:100%;
@@ -216,46 +223,12 @@ body,html {
 }
 @media (max-width: 900px){
     #header {
-        width:94%;
-        padding:15% 3%;
-    }
-    #title {
-        font-size:30px;
+        width: 94%;
+        padding: 5% 3%;
     }
     #links {
-        margin:30px 0px;
-    }
-    #links a {
-        margin:0px;
-    }
-    #middle {
-        width:100%;
-        border-radius:0px;
-        height:80vh;
-        background-size:cover;
-    }
-    #tagline {
-        width:90%;
-        font-size:30px;
-    }
-    .btn_one {
-        font-size:14px;
-        padding:8px 20px;
-    }
-    .btn_two {
-        font-size:14px;
-        padding:8px 20px;
-    }
-    #contact form input {
-        width:92%;
-    }
-    #contact form textarea {
-        width:92%;
-    }
-    .btn_social {
-        font-size:14px;
-        margin:10px;
-        padding:10px 11px;
+        flex-direction: column;
+        gap: 10px;
     }
 }
 #footer {
