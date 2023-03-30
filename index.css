@@ -116,15 +116,15 @@ body,html {
     font-family: 'Comfortaa', cursive;
 }
 #skills {
-    margin:4vh 0px !important;
+    margin:8vh 0px !important;
     padding:2vh 0px !important;
 }
 #work {
-    margin:4vh 0px !important;
+    margin:8vh 0px !important;
     padding:2vh 0px !important;
 }
 #contact {
-    margin:4vh 0px !important;
+    margin:8vh 0px !important;
     padding:2vh 0px !important;
 }
 #contact form {
@@ -166,6 +166,12 @@ body,html {
 }
 ::placeholder {
     color:#fff;
+}
+.spacer {
+    display: block;
+    height: 50vh; /* adjust this value to change the space above the section */
+    margin-top: -50vh; /* negative value of height */
+    visibility: hidden;
 }
 .btn_one {
     color:white;
